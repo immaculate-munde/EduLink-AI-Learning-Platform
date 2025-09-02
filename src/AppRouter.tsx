@@ -5,7 +5,7 @@ import { StudentDashboard } from './pages/StudentDashboard';
 import { TeacherDashboard } from './pages/TeacherDashboard';
 import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
-import { Quiz } from './pages/Quiz';
+import { AdaptiveQuiz } from './pages/AdaptiveQuiz';
 import { ResourceLibrary } from './pages/ResourceLibrary';
 import { Forum } from './pages/Forum';
 import { ForumPost } from './pages/ForumPost';
@@ -36,7 +36,7 @@ export function AppRouter() {
               </ProtectedRoute>}>
             <Route path="student" element={<StudentDashboard />} />
             <Route path="teacher" element={<TeacherDashboard />} />
-            <Route path="quiz" element={<Quiz />} />
+            <Route path="quiz" element={<AdaptiveQuiz />} />
             <Route path="resources" element={<ResourceLibrary />} />
             <Route path="forum" element={<Forum />} />
             <Route path="forum/:postId" element={<ForumPost />} />
